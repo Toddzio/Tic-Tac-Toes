@@ -1,0 +1,40 @@
+@font-face {
+    font-family: shlop;
+    src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
+    }
+@font-face {
+    font-family: shlop;
+    src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
+    font-weight: bold;
+    }
+.container {
+	background-color: black;
+	}
+header {
+	text-align: center;
+	}
+h1 {
+	font-family: shlop;
+	font-weight: bold;
+	font-size: 125px;
+	color: #8A0707;
+	}
+.square {
+	outline: 10px solid #8A0707;
+	outline-offset: -10px;
+	outline-radius: 10px;
+	border-style: solid;
+	border-color: #8A0707;
+	}
+.bloody {
+	font-family: shlop;
+	src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
+	color: #8A0707;
+	}
+.rotate {
+    float:left;
+    transform: rotate(-90deg);
+}​
+.big {
+font-size: 90px;
+}
