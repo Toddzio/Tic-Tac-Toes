@@ -7,6 +7,9 @@
     src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
     font-weight: bold;
     }
+.container-fluid {
+	background-color: black;
+	}
 .container {
 	background-color: black;
 	}
@@ -19,22 +22,44 @@ h1 {
 	font-size: 125px;
 	color: #8A0707;
 	}
+
 .square {
-	outline: 10px solid #8A0707;
-	outline-offset: -10px;
-	outline-radius: 10px;
 	border-style: solid;
 	border-color: #8A0707;
+	border-radius: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	}
+.smsquare {
+	border-style: solid;
+	border-color: #8A0707;
+	border-radius: 25px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	/* display: inline-block; */
+	/* margin: 0 auto; */
 	}
 .bloody {
 	font-family: shlop;
-	src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
 	color: #8A0707;
 	}
 .rotate {
     float:left;
     transform: rotate(-90deg);
 }​
-.big {
-font-size: 90px;
+.big, .score {
+font-size: 100%;
+}
+.score { 
+font-size: 25px;
+vertical-align: top;
+text-align: center;
+ /*width: 100%; */
+ /* padding-bottom: 75%; */
+ }
+.hid {
+	visibility: hidden;
+}
+h2 {
+font-size: 45px;
 }

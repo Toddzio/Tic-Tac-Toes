@@ -1,0 +1,51 @@
+
+<div class="col-sm-2">
+							<div class="row smsquare clearfix">
+								<div class="col-sm-10 score">Score</div>
+							</div>
+							<div class="row smsquare clearfix">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-7"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></div>
+								<div class="col-sm-3">3</div>
+						</div>
+						<div class="row smsquare clearfix">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-7"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg" class="img-responsive img-rounded"></div>
+								<div class="col-sm-3">4</div>
+						</div>		
+
+
+$('#reset').click(function() {
+			location.reload();
+		});
+		
+		
+		= new Array();
+		scoreArray[0] = new Array (0,0,0);
+		scoreArray[1] = new Array (0,0,0);
+		scoreArray[2] = new Array (0,0,0);
+
+
+(scoreArray[1] + scoreArray[2] + scoreArray[3] == 3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[4] +scoreArray[5] + scoreArray[6] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[7] +scoreArray[8] + scoreArray[9] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[1] +scoreArray[4] + scoreArray[7] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[2] +scoreArray[5] + scoreArray[8] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[3] +scoreArray[6] + scoreArray[9] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[1] +scoreArray[5] + scoreArray[9] ==3) {
+			alert("player 2 has won!");
+		}
+		else if (scoreArray[3] +scoreArray[5] + scoreArray[7] ==3) {
+			alert("player 2 has won!");

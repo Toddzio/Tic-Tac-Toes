@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>Tic-Tac-Toes</title>
 
     <!-- Bootstrap -->
+    
     <link href="css/style.css" rel="stylesheet">
+
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,48 +23,62 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="container">
+  <body><div class="container-fluid">
 	  <Header class="row">
-		  <div class="col-sm-* col-md-*">
+		  <div class="col-sm-*">
 				<h1>Tic-Tac-Toes</h1>
 			</div>
 	  </Header>
 	  <div class="row">
-		  <div class="bloody square">
-			  <div class="col-sm-1"></div>
-		<div class="col-sm-3">1 Basic Panel |</div>
-		<div class="col-sm-3">2 Basic Panel |</div>
-		<div class="col-sm-3">3 Basic Panel |</div>
-		<div class="col-sm-1"></div>		
+		<div class="col-sm-12 bloody"> </div>
+		  </div>
+		  <div class="container col-sm-9">
+			  <div class="row">
+				  <div class="bloody">
+					  <div class="col-sm-1"></div>
+						<div class="col-sm-3 square field"><span id="1" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></div>
+						<div class="col-sm-3 square field"><span id="2" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+						<div class="col-sm-3 square field"><span id="3" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+				 </div>
 			</div>
-	</div>
-	<div class="row">
-		  <div class="big bloody">
-			  <div class="col-sm-1"></div>
-		<div class="col-sm-3">|</div>
-		<div class="col-sm-3">|</div>
-		<div class="col-sm-3">|</div>
-		<div class="col-sm-1"></div>		
+			<div class="row">
+				  <div class="bloody letters">
+					  <div class="col-sm-1"></div>
+				<div class="col-sm-3 square field"><span id="4"  class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+				<div class="col-sm-3 square field"><span id="5"  class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></div>
+				<div class="col-sm-3 square field"><span id="6"  class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+				<div class="col-sm-2">
+						</div>	
+					</div>
+		</div>
+		<div class="row">
+			  <div class="bloody letters">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-3 square field"><span id="7" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+				<div class="col-sm-3 square field"><span id="8" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></span></div>
+				<div class="col-sm-3 square field"><span id="9" class="hid field2"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></div>
+			<!--div class="col-sm-1"></div-->		
 			</div>
+		</div>
+	<div class="container col-sm-offset-*">
+		<div class="row smsquare clearfix">
+			<div class="col-sm-10 score">Score</div>
+		</div>
+		<div class="row smsquare clearfix">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-7"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg" class="img-responsive img-rounded"></div>
+			<div id="player1" class="col-sm-3">0</div>
+		</div>
+		<div class="row smsquare clearfix">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-7"><img src="file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg" class="img-responsive img-rounded"></div>
+			<div id="player2" class="col-sm-3">0</div>
+		</div
+		<div class="row smsquare clearfix">
+			<div class="col-sm-6 score square button" id="reset">Reset Board</div>
+			<div class="col-sm-6 score square button" id="reload">Reload Page</div>
+		</div>
 	</div>
-	<div class="row">
-		  <div class="bloody letters">
-			  <div class="col-sm-1"></div>
-		<div class="col-sm-3">4 Basic Panel |</div>
-		<div class="col-sm-3">5 Basic Panel |</div>
-		<div class="col-sm-3">6 Basic Panel |</div>
-		<div class="col-sm-1"></div>		
-	</div>
-	</div>
-	<div class="row">
-		  <div class="bloody letters">
-			  <div class="col-sm-1"></div>
-		<div class="col-sm-3">7 Basic Panel |</div>
-		<div class="col-sm-3">8 Basic Panel |</div>
-		<div class="col-sm-3">9 Basic Panel |</div>
-		<div class="col-sm-1"></div>		
-	</div>
-	</div>
-	  </div>
+</div>
   </body>
   </html>
