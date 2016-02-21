@@ -9,6 +9,7 @@
     }
 .container-fluid {
 	background-color: black;
+	padding-bottom:  100%;
 	}
 .container {
 	background-color: black;
@@ -51,7 +52,14 @@ h1 {
 font-size: 100%;
 }
 .score { 
-font-size: 25px;
+font-size: 55px;
+vertical-align: top;
+text-align: center;
+ /*width: 100%; */
+ /* padding-bottom: 75%; */
+ }
+.reset { 
+font-size: 35px;
 vertical-align: top;
 text-align: center;
  /*width: 100%; */
@@ -63,3 +71,15 @@ text-align: center;
 h2 {
 font-size: 45px;
 }
+.scoreSquare1{
+background:url(file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg) no-repeat center center;
+background-size:100 100;
+}
+.scoreSquare2{
+background:url(file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg) no-repeat center center;
+background-size:100% 100%;
+}
+img{
+margin:0 auto;
+}
+
