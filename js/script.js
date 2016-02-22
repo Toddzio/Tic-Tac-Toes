@@ -7,6 +7,8 @@ $(function(){
 			$('.field2').on('click', function(){
 			var id = this.id;
 					if(turn == 0) {
+						$(this).find('img').removeAttr('src', 'file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg')
+						$(this).find('img').attr('src', 'file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg')
 						$(this).removeClass('hid')
 						scoreArray[id] = 1;
 						turn = turn + 1
@@ -26,14 +28,6 @@ $(function(){
 	$('#reload').click(function() {
 			location.reload();
 	});		
-	$('#reset').click(function() {
-			scoreArray = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}
-			tracker = 0
-			turn = 0
-			$('.field2').addClass('hid')
-			$('.field2').find('img').removeAttr('src', 'file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg')
-			$('.field2').find('img').attr('src', 'file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg')
-	});
 	function reset(){
 			scoreArray = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0}
 			tracker = 0
@@ -46,12 +40,14 @@ function calcScore() {
 			playerScore[0] = score
 			alert("Player 1 has won!")
 			$('#player1').html(score)
+			reset();
 		}
 		else if (turn == 0) {
 			score = (playerScore[1] + 1)
 			playerScore[1] = score
 			alert("Player 2 has won!")
 			$('#player2').html(score)
+			reset();
 		}
 	};
 function Score() {
@@ -106,6 +102,7 @@ function Score() {
 		}
 		else if (tracker > 7){
 			alert("TIE!")
+			reset();
 		};
 	}
 })
