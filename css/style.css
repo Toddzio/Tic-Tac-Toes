@@ -72,11 +72,11 @@ h2 {
 font-size: 45px;
 }
 #player1{
-background:'src', 'assets/toe1crop.jpg';
+background:'url', 'assets/toe1crop.jpg';
 background-size:100 100;
 }
 #player2{
-background:'src', 'assets/toe2crop.jpg';
+background:'url', 'assets/toe2crop.jpg';
 background-size:100% 100%;
 }
 img{
