@@ -72,11 +72,11 @@ h2 {
 font-size: 45px;
 }
 .scoreSquare1{
-background:url(assets/toe1crop.jpg) no-repeat center center;
+background:url(../assets/toe1crop.jpg) no-repeat center center;
 background-size:100 100;
 }
 .scoreSquare2{
-background:url(assets/toe2crop.jpg) no-repeat center center;
+background:url(../assets/toe2crop.jpg) no-repeat center center;
 background-size:100% 100%;
 }
 img{
