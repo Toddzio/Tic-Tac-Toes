@@ -71,11 +71,11 @@ text-align: center;
 h2 {
 font-size: 45px;
 }
-.scoreSquare1{
-background:'src', '.assets/toe2crop.jpg';
+#player1{
+background:'src', 'assets/toe1crop.jpg';
 background-size:100 100;
 }
-.scoreSquare2{
+#player2{
 background:'src', 'assets/toe2crop.jpg';
 background-size:100% 100%;
 }
