@@ -1,10 +1,10 @@
 @font-face {
     font-family: shlop;
-    src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
+    src: url("assets/shloprg.ttf");
     }
 @font-face {
     font-family: shlop;
-    src: url("file:///home/toddzio/code/myWebsites/Tic-Tac-Toes/assets/shloprg.ttf");
+    src: url("assets/shloprg.ttf");
     font-weight: bold;
     }
 .container-fluid {
@@ -72,11 +72,11 @@ h2 {
 font-size: 45px;
 }
 .scoreSquare1{
-background:url(file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe1crop.jpg) no-repeat center center;
+background:url(assets/toe1crop.jpg) no-repeat center center;
 background-size:100 100;
 }
 .scoreSquare2{
-background:url(file:///home/toddzio/code/wdi/myWebsites/Tic-Tac-Toes/assets/toe2crop.jpg) no-repeat center center;
+background:url(assets/toe2crop.jpg) no-repeat center center;
 background-size:100% 100%;
 }
 img{
