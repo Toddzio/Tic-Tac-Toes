@@ -7,16 +7,16 @@ $(function(){
 			$('.field2').on('click', function(){
 			var id = this.id;
 					if(turn == 0) {
-						$(this).find('img').removeAttr('src', '/assets/toe2crop.jpg')
-						$(this).find('img').attr('src', '/assets/toe1crop.jpg')
+						$(this).find('img').removeAttr('src', 'Tic-Tac-Toes/assets/toe2crop.jpg')
+						$(this).find('img').attr('src', 'assets/toe1crop.jpg')
 						$(this).removeClass('hid')
 						scoreArray[id] = 1;
 						turn = turn + 1
 						tracker = tracker + 1						
 					}
 					else if(turn ==1) {
-						$(this).find('img').removeAttr('src', '/assets/toe1crop.jpg')
-						$(this).find('img').attr('src', '/assets/toe2crop.jpg')
+						$(this).find('img').removeAttr('src', 'assets/toe1crop.jpg')
+						$(this).find('img').attr('src', '../assets/toe2crop.jpg')
 						$(this).removeClass('hid')
 						scoreArray[id] = 10;
 						turn = turn -1
